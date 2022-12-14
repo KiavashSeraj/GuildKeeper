@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: rgb(52, 49, 49);
 }
 
 #header-div {
@@ -16,9 +16,45 @@ body {
         font-family: 'Times New Roman', Times, serif;
     }
 #login-form-div {
-    background-color: white;
-    width: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 300px;
+    background-color: #63523f;
+    width: 25%;
     margin-top: 10%;
-    margin-left: ;
+    margin-left: 34%;
+    border: solid;
+    border-color: white;
+    border-radius: 100px;
 }
 
+#login-form {
+    color: white;
+    padding: 20px;
+}
+
+#login-form > h2 {
+    color: white;
+    font-size:35px;
+    margin-left: 30%;
+    width: fit-content;
+    border-bottom: solid;
+}
+
+#username-label, #password-label {
+    color: white;
+    font-size: larger;
+    margin-left: 15%;
+}
+
+#username-div {
+    margin-top: 100px;
+}
+
+#password-div, #username-div {
+    border: solid;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    padding: 10px;
+
+}
