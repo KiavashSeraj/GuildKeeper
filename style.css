@@ -1,0 +1,24 @@
+body {
+    background-color: black;
+}
+
+#header-div {
+    border: solid;
+    border-radius: 15pt;
+    border-color: black;
+    background-color: #63523f;
+}
+    h1 {
+        margin: 1pt;
+        padding-left: 20pt;
+        font-size: 30pt;
+        font-style: italic;
+        font-family: 'Times New Roman', Times, serif;
+    }
+#login-form-div {
+    background-color: white;
+    width: fit-content;
+    margin-top: 10%;
+    margin-left: ;
+}
+
