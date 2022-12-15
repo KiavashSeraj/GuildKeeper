@@ -1,12 +1,12 @@
 body {
-    background-color: rgb(52, 49, 49);
+    background-color: #151c26;
 }
 
 #header-div {
-    border: solid;
-    border-radius: 15pt;
-    border-color: black;
-    background-color: #63523f;
+    margin-left: -100px;
+    margin-right: -100px;
+    margin-top: -20px;
+    padding-top: 20px;
 }
     h1 {
         margin: 1pt;
@@ -15,17 +15,28 @@ body {
         font-style: italic;
         font-family: 'Times New Roman', Times, serif;
     }
-#login-form-div {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 300px;
-    background-color: #63523f;
-    width: 25%;
-    margin-top: 10%;
-    margin-left: 34%;
+img {
+    width: 10%;
     border: solid;
-    border-color: white;
-    border-radius: 100px;
+    border-color: #162a45;
+    border-width: 0.5px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: -10px;
+    margin-left: 360px;
+}
+#login-form-div {
+    padding-left: 5px;
+    padding-right:5px;
+    padding-bottom: 100px;
+    background-color: #2a3038;
+    width: 25%;
+    margin-top: 5%;
+    margin-left: 15%;
+    border: solid;
+    border-color: #151c26;
+    border-radius: 10px;
+    border-width: 1px;
 }
 
 #login-form {
@@ -35,26 +46,55 @@ body {
 
 #login-form > h2 {
     color: white;
-    font-size:35px;
-    margin-left: 30%;
+    font-size:20px;
+    margin-left: 10%;
     width: fit-content;
-    border-bottom: solid;
+
 }
 
 #username-label, #password-label {
     color: white;
-    font-size: larger;
-    margin-left: 15%;
+    font-size: 15x;
+    margin-left: 5%;
 }
 
 #username-div {
-    margin-top: 100px;
+    margin-top: 10px;
 }
 
 #password-div, #username-div {
     border: solid;
+    border-color: #151c26;
     border-radius: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     padding: 10px;
+
+}
+
+input {
+    border: solid;
+    border-radius: 50px;
+    border-width: 1px;
+    width: 60%;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 15px;
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: 5px;
+    background-color: #151c26;
+    color: white;
+}
+
+#login-button {
+    margin-left: 20px;
+    width: 90%;
+    border: solid;
+    border-color: #151c26;
+    border-radius: 5px;
+    padding-top: 3px;
+    color: #151c26;
+    background-color: white;
 
 }

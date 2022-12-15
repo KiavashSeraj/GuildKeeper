@@ -11,28 +11,29 @@
 
 <body>
     <div id="header-div">
-        <h1>GuildKeeper</h1>
+        <h1><img src="logo.png" alt="Logo image for GuildKeeper"></h1>
     </div>
 
     <div id="login-form-div">
         <form id="login-form">
-            <h2>Guild Login</h2>
+            <h2>Login To Access Your Guild</h2>
             <div id="username-div">
-                <label id="username-label" for="username">Username:</label>
-                <input type="text" id="username" name="username">
+                <label id="username-label" for="username">Username</label>
+                <br>
+                <input type="text" id="username" name="username" required>
             </div>
             <br>
             <div id="password-div">
-                <label id="password-label" for="password">Password:</label>
-                <input type="password" id="password" name="password">
+                <label id="password-label" for="password">Password</label><br>
+                <input type="password" id="password" name="password" required>
             </div>
             <br>
-            <input type="submit" value="Log in">
+            <button id="login-button">Log In
         </form>
 
     </div>
 
 </body>
 <style src="style.css"></style>
-
+<script src="script.js"></script>
 </html>
