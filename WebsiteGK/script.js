@@ -1,0 +1,29 @@
+let loginData;
+
+(function () {
+    let url = '/accounts.json';
+
+    fetch(url)
+        .then((response) => response.text()
+            .then((text) => {
+                loginData = JSON.parse(text);
+            }));
+
+    document.getElementById('login-button').addEventListener('click', (ev) => {
+        ev.preventDefault();
+
+        let username = document.getElementById('username').value;
+        let password = document.getElementById('password').value;
+
+        loginData.forEach(element => {
+            if (username == element.Username) {
+                if (password == element.Password) {
+                    console.log('Success');
+                } else {
+                    console.log("failure");
+                }
+            }
+        });
+    });        
+})();
+
