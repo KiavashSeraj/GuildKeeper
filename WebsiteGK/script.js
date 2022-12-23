@@ -1,7 +1,7 @@
 let loginData;
 
 (function () {
-    let url = '/accounts.json';
+    let url = 'accounts.json';
 
     fetch(url)
         .then((response) => response.text()
@@ -16,12 +16,15 @@ let loginData;
         let password = document.getElementById('password').value;
 
         loginData.forEach(element => {
+            console.log(element);
             if (username == element.Username) {
                 if (password == element.Password) {
-                    console.log('Success');
+                    window.location = "https://www.google.com";
                 } else {
                     console.log("failure");
                 }
+            } else {
+                console.log("failure")
             }
         });
     });        
