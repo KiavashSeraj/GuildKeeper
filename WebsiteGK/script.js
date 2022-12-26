@@ -2,6 +2,7 @@ let loginData;
 
 (function () {
     let url = 'accounts.json';
+    console.log("hello")
 
     fetch(url)
         .then((response) => response.text()
