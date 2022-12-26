@@ -93,6 +93,7 @@ input {
 }
 
 #login-button {
+    font-family: 'Times New Roman', Times, serif;
     margin-left: 20%;
     font-size: 15px;
     width: 60%;
@@ -103,5 +104,4 @@ input {
     padding-bottom: 3px;
     color: white;
     background-color: #151c26;
-
 }

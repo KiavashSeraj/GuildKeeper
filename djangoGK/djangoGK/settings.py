@@ -100,7 +100,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 STATICFILES_DIRS = [
-    "C:/Users/Kiavash Seraj/Desktop/djangoGK/playground/staticfiles/"
+    "C:/Users/Kiavash Seraj/Desktop/GuildKeeper/GuildKeeper/djangoGK/playground/staticfiles/"
 ]
 
 
