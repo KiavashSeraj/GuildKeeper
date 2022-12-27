@@ -5,16 +5,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="businesspagesstyle.css" rel="stylesheet">
+    <link href="BSHomeStyle.css" rel="stylesheet">
     <title>Business Home page</title>
 </head>
 
-<body>
+<header>
 
-    <div id="header-div">
-        <img src="logo.png">
-        <div id="title">GuildKeeper</div>
+    <!-- <img src="logo.png"> -->
+    <div id="title">
+        <div>GK</div>
     </div>
+
+    <div id="BSName">
+        <p>The Modern Guild</p>
+    </div>
+
+    <div id="ProfileSettings">
+        <button id="Profile">
+            <img class="icons" src="profileicon.png">
+            Profile
+        </button>
+        <br>
+        <button id="Settings">
+            <img class="icons" src="settingsicon.png">
+            Settings
+        </button>
+    </div>
+
+</header>
+
+<body>
 
     <div class="tab">
         <div class="menu-icon">
@@ -32,7 +52,7 @@
 <script>
 
     document.getElementById('home').addEventListener('click', (ey) => {
-        window.location.assign('homepage.html')        
+        window.location.assign('homepage.html')
     })
 </script>
 
