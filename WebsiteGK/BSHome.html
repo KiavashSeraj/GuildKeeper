@@ -38,18 +38,35 @@
 
     <div class="tab">
         <div class="menu-icon">
-            <span></span>
-            <span></span>
-            <span></span>
+            <p id="EnterpriseButton">E</p>
+            <p id="BStitle">GuildKeeper</p>
         </div>
+
         <!--NEED TO WORK ON-->
-        <button id="home" class="tablinks">Home</button>
-        <button class="tablinks">Calender</button>
+        <div id="tab-buttons">
+            <button id="home" class="tablinks">Home</button>
+            <button id="Cal" class="tablinks">Calender</button>
+            <button id="Treasury" class="tablinks">Treasury</button>
+        </div>
+    </div>
+
+    <div id="content-body">
+        
     </div>
 
 
 </body>
+
+
 <script>
+
+    document.querySelector('#EnterpriseButton').onmouseover = function () {
+        this.textContent = 'Enterprise';
+    }
+
+    document.querySelector('#EnterpriseButton').onmouseout = function () {
+        this.textContent = 'E';
+    }
 
     document.getElementById('home').addEventListener('click', (ey) => {
         window.location.assign('homepage.html')
