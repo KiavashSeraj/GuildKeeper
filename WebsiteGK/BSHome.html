@@ -38,7 +38,7 @@
 
     <div class="tab">
         <div class="menu-icon">
-            <p id="EnterpriseButton">E</p>
+            <p id="EnterpriseButton" onclick="showenterprise()">E</p>
             <p id="BStitle">GuildKeeper</p>
         </div>
 
@@ -50,8 +50,17 @@
         </div>
     </div>
 
+    <div id="sidebar">
+        <ul>
+            <li>SBhunt</li>
+            <li>GuildKeeper</li>
+            <li>ParkingApp</li>
+            <li>GuildConsult</li>
+        </ul>
+    </div>
+
     <div id="content-body">
-        
+
     </div>
 
 
@@ -71,6 +80,11 @@
     document.getElementById('home').addEventListener('click', (ey) => {
         window.location.assign('homepage.html')
     })
+
+    function showenterprise() {
+        document.getElementById('sidebar').classList.toggle('active');
+        document.querySelector('.tab').classList.toggle('active');
+    }
 </script>
 
 </html>

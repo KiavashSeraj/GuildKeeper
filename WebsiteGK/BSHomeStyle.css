@@ -4,6 +4,8 @@ body {
 }
 
 header {
+    position: fixed;
+    width: 100%;
     background-color: #0d2038;
     display: flex;
     flex-direction: row;
@@ -58,12 +60,21 @@ div#title div {
 
 /* Code for TABS */
 .tab {
+    position: fixed;
+    width: 100%;
     border: 1px solid #ccc;
     background-color: rgba(16, 18, 93, 0.217);
     display: flex;
     justify-content: space-between;
     padding: 10px;
     z-index: 1;
+    transition: .5s;
+    top: 75px;
+}
+
+.tab.active {
+    margin-left: 13%;
+    width: 87%
 }
 
 /* Style the buttons inside the tab */
@@ -136,3 +147,43 @@ div#title div {
 .menu-icon #EnterpriseButton:not(:hover) {
     transition: 1.0s;
 }
+
+#sidebar {
+    position: fixed;
+    top: 75px;
+    width: 13%;
+    height: 100%;
+    background-color: #45474a;
+    color: white;
+    z-index: 1;
+    left: -13%;
+    transition: .5s;
+}
+
+#sidebar.active {
+    border-top: solid;
+    border-right: solid;
+    border-width: 1px;
+    left: 0;
+}
+
+#sidebar ul li {
+    list-style: none;
+    font-size: 16pt;
+    margin-right: 25px;
+    margin-bottom: 5px;
+    padding: 20px 24px;
+    border: solid;
+    border-radius: 15px;
+    
+}
+
+/*  
+ * 
+ * 
+ * Content of the body 
+ *
+ *
+ */
+
+ 
