@@ -60,10 +60,12 @@ div#title div {
 
 /* Code for TABS */
 .tab {
+    left: 0;
     position: fixed;
     width: 100%;
-    border: 1px solid #ccc;
-    background-color: rgba(16, 18, 93, 0.217);
+    margin-top: -1px;
+    border-top: 5px solid rgb(70, 69, 90);
+    background-color: rgba(119, 120, 133, 0.866);
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -186,4 +188,12 @@ div#title div {
  *
  */
 
- 
+ #content-body {
+    width: 100%;
+    position: fixed;
+    top: 200px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+ }
