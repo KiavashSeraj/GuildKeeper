@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link  rel="stylesheet" href="{% static '/styles/BSHomeStyle.css' %}">
+    <title>Business Home page</title>
+</head>
+
+
+
+<body>
+    <header>
+
+        <!-- <img src="logo.png"> -->
+        <div id="title">
+            <div>GK</div>
+        </div>
+
+        <div id="BSName">
+            <p>The Modern Guild</p>
+        </div>
+
+        <div id="ProfileSettings">
+            <button id="Profile">
+                <img class="icons" src="{% static 'images/profileicon.png' %}">
+                Profile
+            </button>
+            <br>
+            <button id="Settings">
+                <img class="icons" src="{% static 'images/settingsicon.png' %}">
+                Settings
+            </button>
+        </div>
+
+        <div class="tab">
+            <div class="menu-icon">
+                <p id="EnterpriseButton" onclick="showenterprise()">E</p>
+                <p id="BStitle">GuildKeeper</p>
+            </div>
+
+            <!--NEED TO WORK ON-->
+            <div id="tab-buttons">
+                <button id="home" class="tablinks">Home</button>
+                <button id="Cal" class="tablinks">Calender</button>
+                <button id="Treasury" class="tablinks">Treasury</button>
+            </div>
+        </div>
+
+    </header>
+    <div id="sidebar">
+        <ul>
+            <li>SBhunt</li>
+            <li>GuildKeeper</li>
+            <li>ParkingApp</li>
+            <li>GuildConsult</li>
+        </ul>
+    </div>
+
+    <div id="content-body">
+        <div id="priority-goals"></div>
+    </div>
+
+
+</body>
+
+
+<script>
+
+    (function () {
+        
+    })
+
+    document.querySelector('#EnterpriseButton').onmouseover = function () {
+        this.textContent = 'Enterprise';
+    }
+
+    document.querySelector('#EnterpriseButton').onmouseout = function () {
+        this.textContent = 'E';
+    }
+
+    document.getElementById('home').addEventListener('click', (ey) => {
+        if (window.URL != BSHome.html) {
+            window.location.assign('BSHome.html')
+        }
+
+    })
+
+    function showenterprise() {
+        document.getElementById('sidebar').classList.toggle('active');
+        document.querySelector('.tab').classList.toggle('active');
+    }
+</script>
+
+</html>

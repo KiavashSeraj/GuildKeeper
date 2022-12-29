@@ -1,0 +1,203 @@
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0pt;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #0d2038;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: white;
+    padding: 5pt;
+}
+
+#title {
+    color: white;
+    font-size: 35pt;
+    display: flex;
+    align-items: flex-end;
+}
+
+div#title div {
+    border: solid;
+    border-width: 2px;
+    margin-bottom: 3pt;
+    padding-right: 3pt;
+    padding-left: 3pt;
+}
+
+#BSName {
+    font-size: 25pt;
+    margin: 0pt;
+    padding: 0pt;
+}
+
+#BSName p {
+    margin: 5pt;
+}
+
+#ProfileSettings {
+    display: block;
+    font-size: 12pt;
+    padding-right: 15pt;
+}
+
+#ProfileSettings :hover {
+    cursor: pointer;
+}
+
+#ProfileSettings > button > img {
+    background-color: transparent;
+}
+
+.icons {
+    width: 12pt;
+}
+
+/* Code for TABS */
+.tab {
+    left: 0;
+    position: fixed;
+    width: 100%;
+    margin-top: -1px;
+    border-top: 5px solid #46455a;
+    background-color: rgba(119, 120, 133, 0.866);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    z-index: 1;
+    transition: .5s;
+    top: 75px;
+}
+
+.tab.active {
+    margin-left: 13%;
+    width: 87%
+}
+
+/* Style the buttons inside the tab */
+.tab .tablinks {
+    background-color: inherit;
+    float: left;
+    border: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 5px;
+    transition: 0.3s;
+    font-size: 20px;
+    margin: 5px;
+    width: 130px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+#tab-buttons {
+    width: 530px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #0d2038;
+    border-color: white;
+    color: whitesmoke;
+    padding: 15px;
+}
+
+
+.menu-icon {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.menu-icon #EnterpriseButton {
+    font-size: 40px;
+    margin: 0px;
+    cursor: pointer;
+    border: solid;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.menu-icon #BStitle {
+    margin: 0;
+    margin-left: 25px;
+    font-size: 25pt;
+}
+
+#buildinglogo {
+    width: 20pt;
+}
+
+.menu-icon #EnterpriseButton:hover {
+    transition-duration: 0.5s;
+    background-color: #0d2038;
+    color: white;
+    border-width: 1px;
+    border-color: white;
+    padding: 5px;
+}
+
+.menu-icon #EnterpriseButton:not(:hover) {
+    transition: 1.0s;
+}
+
+#sidebar {
+    position: fixed;
+    top: 75px;
+    width: 13%;
+    height: 100%;
+    background-color: #45474a;
+    color: white;
+    z-index: 1;
+    left: -13%;
+    transition: .5s;
+}
+
+#sidebar.active {
+    border-top: solid;
+    border-top-width: 3px;
+    border-right: solid;
+    border-right-width: 1px;
+    left: 0;
+}
+
+#sidebar ul li {
+    list-style: none;
+    font-size: 16pt;
+    margin-right: 25px;
+    margin-bottom: 5px;
+    padding: 20px 24px;
+    border: solid;
+    border-radius: 15px;
+    
+}
+
+/*  
+ * 
+ * 
+ * Content of the body 
+ *
+ *
+ */
+
+ #content-body {
+    width: 100%;
+    position: fixed;
+    top: 200px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+ }
