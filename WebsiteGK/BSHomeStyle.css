@@ -43,7 +43,7 @@ div#title div {
 #ProfileSettings {
     display: block;
     font-size: 12pt;
-    padding-right: 5pt;
+    padding-right: 15pt;
 }
 
 #ProfileSettings :hover {
@@ -64,7 +64,7 @@ div#title div {
     position: fixed;
     width: 100%;
     margin-top: -1px;
-    border-top: 5px solid rgb(70, 69, 90);
+    border-top: 5px solid #46455a;
     background-color: rgba(119, 120, 133, 0.866);
     display: flex;
     justify-content: space-between;
@@ -84,7 +84,8 @@ div#title div {
     background-color: inherit;
     float: left;
     border: solid;
-    border-width: 1px;
+    border-color: black;
+    border-width: 2px;
     border-radius: 5px;
     outline: none;
     cursor: pointer;
@@ -94,6 +95,7 @@ div#title div {
     margin: 5px;
     width: 130px;
     font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
 
 #tab-buttons {
@@ -105,7 +107,8 @@ div#title div {
 /* Change background color of buttons on hover */
 .tab button:hover {
     background-color: #0d2038;
-    color: white;
+    border-color: white;
+    color: whitesmoke;
     padding: 15px;
 }
 
@@ -164,8 +167,9 @@ div#title div {
 
 #sidebar.active {
     border-top: solid;
+    border-top-width: 3px;
     border-right: solid;
-    border-width: 1px;
+    border-right-width: 1px;
     left: 0;
 }
 

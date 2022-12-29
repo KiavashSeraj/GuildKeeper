@@ -11,7 +11,7 @@
 
 <body>
     <div id="header-div">
-        <h1><img src="logo.png" alt="Logo image for GuildKeeper"></h1>
+        <h1><img src="images/logo.png" alt="Logo image for GuildKeeper"></h1>
     </div>
 
     <div id="login-form-div">
@@ -35,5 +35,41 @@
 
 </body>
 <style src="/style.css"></style>
-<script src="script.js"></script>
+<script>
+    let loginData;
+
+    (function () {
+        let url = 'accounts.json';
+        console.log("hello")
+
+        fetch(url)
+            .then((response) => response.text()
+                .then((text) => {
+                    loginData = JSON.parse(text);
+                }));
+
+        document.getElementById('login-button').addEventListener('click', (ev) => {
+            ev.preventDefault();
+
+            let username = document.getElementById('username').value;
+            let password = document.getElementById('password').value;
+
+            loginData.forEach(element => {
+                console.log(element);
+                if (username == element.Username) {
+                    if (password == element.Password) {
+                        window.location = "http://127.0.0.1:5500/GuildKeeper/WebsiteGK/BSHome.html";
+                    } else {
+                        console.log("failure");
+                    }
+                } else {
+                    console.log("failure")
+                }
+            });
+        });
+    })();
+
+
+</script>
+
 </html>

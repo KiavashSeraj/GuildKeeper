@@ -12,44 +12,44 @@
 
 
 <body>
-<header>
+    <header>
 
-    <!-- <img src="logo.png"> -->
-    <div id="title">
-        <div>GK</div>
-    </div>
-
-    <div id="BSName">
-        <p>The Modern Guild</p>
-    </div>
-
-    <div id="ProfileSettings">
-        <button id="Profile">
-            <img class="icons" src="profileicon.png">
-            Profile
-        </button>
-        <br>
-        <button id="Settings">
-            <img class="icons" src="settingsicon.png">
-            Settings
-        </button>
-    </div>
-
-    <div class="tab">
-        <div class="menu-icon">
-            <p id="EnterpriseButton" onclick="showenterprise()">E</p>
-            <p id="BStitle">GuildKeeper</p>
+        <!-- <img src="logo.png"> -->
+        <div id="title">
+            <div>GK</div>
         </div>
 
-        <!--NEED TO WORK ON-->
-        <div id="tab-buttons">
-            <button id="home" class="tablinks">Home</button>
-            <button id="Cal" class="tablinks">Calender</button>
-            <button id="Treasury" class="tablinks">Treasury</button>
+        <div id="BSName">
+            <p>The Modern Guild</p>
         </div>
-    </div>
 
-</header>
+        <div id="ProfileSettings">
+            <button id="Profile">
+                <img class="icons" src="images/profileicon.png">
+                Profile
+            </button>
+            <br>
+            <button id="Settings">
+                <img class="icons" src="images/settingsicon.png">
+                Settings
+            </button>
+        </div>
+
+        <div class="tab">
+            <div class="menu-icon">
+                <p id="EnterpriseButton" onclick="showenterprise()">E</p>
+                <p id="BStitle">GuildKeeper</p>
+            </div>
+
+            <!--NEED TO WORK ON-->
+            <div id="tab-buttons">
+                <button id="home" class="tablinks">Home</button>
+                <button id="Cal" class="tablinks">Calender</button>
+                <button id="Treasury" class="tablinks">Treasury</button>
+            </div>
+        </div>
+
+    </header>
     <div id="sidebar">
         <ul>
             <li>SBhunt</li>
@@ -69,6 +69,10 @@
 
 <script>
 
+    (function () {
+        
+    })
+
     document.querySelector('#EnterpriseButton').onmouseover = function () {
         this.textContent = 'Enterprise';
     }
@@ -78,7 +82,10 @@
     }
 
     document.getElementById('home').addEventListener('click', (ey) => {
-        window.location.assign('homepage.html')
+        if (window.URL != BSHome.html) {
+            window.location.assign('BSHome.html')
+        }
+
     })
 
     function showenterprise() {

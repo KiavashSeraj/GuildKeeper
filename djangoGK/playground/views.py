@@ -3,14 +3,19 @@ from django.http import HttpResponse
 
 # Create your views here.
 
-def titleLoad(request):
+def loginLoad(request):
     #pull data from db
     # transform data
     # send email
-    return render(request, 'index.html')
+    return render(request, 'login.html')
 
-def homeload(request):
+def personalLoad(request):
+
+    return render(request, 'personal.html')
 
 
-    return render(request, 'homepage.html')
+def BShomeLoad(request):
+
+
+    return render(request, 'BSHome.html')
 
