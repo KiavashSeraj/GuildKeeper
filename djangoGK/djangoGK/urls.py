@@ -19,7 +19,8 @@ from django.urls import path, include
 # playground/hello
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('playground/', include('django.contrib.auth.urls')),
+    path('login/', include('django.contrib.auth.urls')),
+    path('login/', include('login.urls')),
     path('playground/', include('playground.urls')),
 
 ]
