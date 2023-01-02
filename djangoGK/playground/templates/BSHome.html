@@ -34,6 +34,9 @@
                 <img class="icons" src="{% static 'images/settingsicon.png' %}">
                 Settings
             </button>
+            <button  id="logout-button">
+                Logout
+            </button>
         </div>
 
         <div class="tab">
@@ -73,6 +76,10 @@
     (function () {
         
     })
+
+    document.querySelector('#logout-button').onclick = function () {
+        window.location.assign("{% url 'logout' %}")
+    }
 
     document.querySelector('#EnterpriseButton').onmouseover = function () {
         this.textContent = 'Enterprise';

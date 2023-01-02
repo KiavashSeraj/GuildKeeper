@@ -12,8 +12,10 @@ from django.views import generic
 @login_required
 def personalLoad(request):
 
+    user_name = request.user.get_full_name()
+    context = {'user_name': user_name}
 
-    return render(request, 'personal.html')
+    return render(request, 'personal.html', context)
 
 @login_required
 def BShomeLoad(request):
