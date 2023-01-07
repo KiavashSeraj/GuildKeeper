@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% load static %}
-    <link  rel="stylesheet" href="{% static '/styles/BSHomeStyle.css' %}">
+    <link rel="stylesheet" href="{% static '/styles/BSHomeStyle.css' %}">
     <title>Business Home page</title>
 </head>
 
@@ -34,7 +34,7 @@
                 <img class="icons" src="{% static 'images/settingsicon.png' %}">
                 Settings
             </button>
-            <button  id="logout-button">
+            <button id="logout-button">
                 Logout
             </button>
         </div>
@@ -64,7 +64,27 @@
     </div>
 
     <div id="content-body">
-        <div id="priority-goals"></div>
+        <div id="top-half">
+            <div id="bio-div" class="info-boxes">
+                <p>Bio: <p>GuildKeeper is a business and enterprise tracking software that aims to provide any group of individuals 
+                    that desire to work together under an impression of deicision visibiilty along with financial visiblity. GuildKeeper is a business and enterprise tracking software that aims to provide any group of individuals 
+                    that desire to work together under an impression of deicision visibiilty along with financial visiblity. </p></p>
+            </div>
+            <div id="members-div" class="info-boxes">
+                <p>Members:</p>
+            </div>
+            <div id="obj-div" class="info-boxes">
+                <p>Objectives</p>
+            </div>
+        </div>
+        <div id="bottom-half">
+            <div id="task-div" class="info-boxes">
+                <p>Tasks</p>
+            </div>
+            <div id="treasury-div" class="info-boxes">
+                <p>Treasury</p>
+            </div>
+        </div>
     </div>
 
 
@@ -74,7 +94,7 @@
 <script>
 
     (function () {
-        
+
     })
 
     document.querySelector('#logout-button').onclick = function () {

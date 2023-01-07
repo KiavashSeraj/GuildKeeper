@@ -163,6 +163,7 @@ div#title div {
     z-index: 1;
     left: -13%;
     transition: .5s;
+    visibility: hidden;
 }
 
 #sidebar.active {
@@ -171,16 +172,22 @@ div#title div {
     border-right: solid;
     border-right-width: 1px;
     left: 0;
+    visibility: visible;
+}
+
+#sidebar ul {
+    margin-left: -15px;
 }
 
 #sidebar ul li {
     list-style: none;
-    font-size: 16pt;
+    font-size: 100%;
     margin-right: 25px;
     margin-bottom: 5px;
     padding: 20px 24px;
     border: solid;
     border-radius: 15px;
+    width: fit-content;
     
 }
 
@@ -198,6 +205,32 @@ div#title div {
     top: 200px;
     display: grid;
     gap: 15px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+ }
+
+ #top-half {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+ }
+
+
+ #bio-div {
+    white-space: wrap;
+ }
+
+ #bottom-half {
+    display: grid;
+    gap: 10px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr;
+ }
+ .info-boxes {
+    border: solid;
+    border-color: black;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
  }
